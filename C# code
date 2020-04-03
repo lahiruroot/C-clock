@@ -1,0 +1,32 @@
+//Run  on  visual  vstudio
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading;
+
+namespace clock
+{
+    [Obsolete]
+    class Program
+    {
+        private static TimeZoneInfo India_Standard_Time = TimeZoneInfo.FindSystemTimeZoneById("India Standard Time");
+        static void Main(string[] args)
+        {
+            int milliseconds = 1000;
+
+            while (!Console.KeyAvailable)
+            {
+                Console.WriteLine(DateTime.UtcNow.ToString("UT HH:mm:ss tt"));
+                Console.WriteLine(DateTime.Now.ToString("Srilanka HH:mm:ss tt"));
+                Console.WriteLine(TimeZoneInfo.Local.DisplayName);
+                Thread.Sleep(milliseconds);
+                Console.Clear();
+
+            }
+
+        }
+    }
+}
+
