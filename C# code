@@ -11,7 +11,7 @@ namespace clock
     [Obsolete]
     class Program
     {
-        private static TimeZoneInfo India_Standard_Time = TimeZoneInfo.FindSystemTimeZoneById("Sri Lanka Standard Time:");
+        private static TimeZoneInfo India_Standard_Time = TimeZoneInfo.FindSystemTimeZoneById("American Time reagion:");
         static void Main(string[] args)
         {
             int milliseconds = 1000;
@@ -30,3 +30,4 @@ namespace clock
     }
 }
 
+//Thi is a simple application for usin C# to coumt time
